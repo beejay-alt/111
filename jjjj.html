@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="cow.">
+	<title></title>
+</head>
+<body>
+<p class="errorMessage" id="errorMessage">
+	
+</p>
+</body>
+<style>
+@media screen and (max-width: 480px) {
+    .logo{
+        width:  200px;
+    }
+    .searchbar{
+        width: 180px!important ;
+        height: 50px!important ;
+        font-size:  0.8rem!important;
+    }
+    .starty{
+        height: 50px!important  ;
+    }
+    .img1{
+        width: 350px!important  ;
+        height: 300px!important;
+    }
+    .img2{
+        width: 350px!important;
+        height: 200px!important ;
+    }
+    .img3{
+        width: 350px!important;
+        height: 450px!important ;
+    }
+    .img4{
+        width: 350px!important;
+        height: 250px!important ;
+    }
+    .img5{
+        width: 350px!important;
+        height: 350px!important ;
+    }
+    .img6{
+        width: 350px!important;
+        height: 350px!important ;
+    }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:  768px) {
+    .logo{
+        width:  200px;
+    }
+    .searchbar{
+        width: 180px!important ;
+        height: 50px!important ;
+        font-size:  0.8rem!important;
+    }
+    .starty{
+        height: 50px!important  ;
+    }
+    .img1{
+        width: 350px!important  ;
+        height: 300px!important;
+    }
+    .img2{
+        width: 350px!important;
+        height: 200px!important ;
+    }
+    .img3{
+        width: 350px!important;
+        height: 450px!important ;
+    }
+    .img4{
+        width: 350px!important;
+        height: 250px!important ;
+    }
+    .img5{
+        width: 350px!important;
+        height: 350px!important ;
+    }
+    .img6{
+        width: 350px!important;
+        height: 350px!important ;
+    }
+    }
+.cc{
+color:white;
+background-color:black;
+margin-left:40%;
+margin-top:25%;
+width:13%;
+box-shadow:10;
+}
+.center {
+  line-height: 200px;
+  height: 200px;
+  text-align: center;
+}
+.center p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+</style>
+<div  class="center">
+
+<h1>Height checking </h1>
+<input  type="number" id="Height" type="text" placeholder="Enter your height">
+<button onclick="checkHeight()">Submit</button>
+<body>
+	<script type="text/javascript">
+	function checkHeight(){
+	var Height = document.getElementById("Height").value;
+
+	if (Height < 5.4) {
+		document.getElementById("container").innerHTML = "<h1>Too short</h1>";
+	} else {
+		document.getElementById("errorMessage").innerHTML = "<h1>You're tall enough</h1>";
+	}
+}
+</script>
+</div>
+</body>
+</html>
